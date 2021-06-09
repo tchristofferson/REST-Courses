@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.tchristofferson'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.sql2o:sql2o:1.5.4'
+    compile 'com.google.code.gson:gson:2.8.7'
+    compile 'com.h2database:h2:1.4.199'
+    compile 'com.sparkjava:spark-core:2.9.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
